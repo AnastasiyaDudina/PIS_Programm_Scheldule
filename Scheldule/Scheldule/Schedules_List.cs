@@ -11,7 +11,7 @@ namespace Scheldule
         public void Add(int Schedule)
         {
             con.Open();
-            string AddDisDir = "INSERT INTO ListSchedule VALUES('" + Schedule + "','" + id_group + "')";
+            string AddDisDir = "INSERT INTO ListSchedule VALUES('" + Schedule + "','" + id_group + "'); INSERT INTO FreeLessons VALUES ('"+Schedule+ "',NULL,NULL,NULL,NULL)";
             OleDbCommand command = new OleDbCommand(AddDisDir, con);
             command.ExecuteScalar();
             con.Close();

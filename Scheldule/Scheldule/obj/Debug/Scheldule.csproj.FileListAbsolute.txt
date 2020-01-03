@@ -20,3 +20,4 @@ C:\Users\Aleksey\Desktop\GitSch\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\D
 C:\Users\Aleksey\Desktop\GitSch\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.csproj.CoreCompileInputs.cache
 C:\Users\Aleksey\Desktop\GitSch\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.exe
 C:\Users\Aleksey\Desktop\GitSch\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.pdb
+C:\Users\Aleksey\Desktop\GitSch\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.SchedForm.resources

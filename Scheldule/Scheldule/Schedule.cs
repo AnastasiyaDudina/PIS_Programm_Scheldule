@@ -1,10 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.OleDb;
 
 namespace Scheldule
 {
-    class Schedule
+    public class Schedule
     {
+        private static Lessons_List Les = new Lessons_List();
+        private static Audiences audien = new Audiences();
+
+        public int SchedudeID { get; set; } //объявить
+
         OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=DESKTOP-PHP72G2;Initial Catalog=BD_project;Integrated Security=SSPI");
         public int Created(int semestr)
         {
@@ -15,5 +21,14 @@ namespace Scheldule
             con.Close();
             return result;
         }
+        public void AddDiscipline(int ds)
+        {
+            Les.SchedID = SchedudeID;
+            var lessons = Les.GetLesson(ds);
+            var UndLesson= audien.GetAudLess(lessons); //день+время+имя+ауд
+            Les.AddUndLesson(UndLesson);
+            //return UndLesson;
+        }
+
     }
 }

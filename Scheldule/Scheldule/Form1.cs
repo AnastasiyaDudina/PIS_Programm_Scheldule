@@ -23,7 +23,14 @@ namespace Scheldule
             this.Hide();
             cf.ShowDialog();
             this.Close();
+        }
 
+        private void расписаниеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SchedForm sf = new SchedForm();
+            this.Hide();
+            sf.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -32,6 +32,8 @@ namespace Scheldule
             button1.Enabled = false;
             textBox1.Enabled = false;
             comboBox1.Enabled = false;
+            button2.Enabled = true;
+            Text += ": направление " + comboBox1.Text.TrimEnd() + ", семестр " + textBox1.Text;
         }
         public void Update()
         {
@@ -48,10 +50,15 @@ namespace Scheldule
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Curriculum c = new Curriculum();
-            c.assignDiscipline(CurID, textBox2.Text, int.Parse(textBox3.Text), comboBox2.Text);
-            MessageBox.Show(textBox2.Text.TrimEnd() + " добавлен в УП", "Уведомление");
-            Update();
+            if (textBox2.Text != "")
+            {
+                Curriculum c = new Curriculum();
+                c.assignDiscipline(CurID, textBox2.Text, int.Parse(textBox3.Text), comboBox2.Text);
+                MessageBox.Show(textBox2.Text.TrimEnd() + " добавлен в УП", "Уведомление");
+                Update();
+            }
+            else
+                MessageBox.Show("Заполните поле 'Дисциплина'","Уведомление");
         }
 
         private void CurriculumForm_Load(object sender, EventArgs e)

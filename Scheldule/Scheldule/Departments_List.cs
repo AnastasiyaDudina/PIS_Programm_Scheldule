@@ -13,6 +13,7 @@ namespace Scheldule
             string depart = "select id from ListDepartments where Name = '" + nameD + "'";
             OleDbCommand command = new OleDbCommand(depart, con);
             int result = Convert.ToInt32(command.ExecuteScalar());
+            con.Close();
             return result;
         }
     }

@@ -5,7 +5,9 @@ namespace Scheldule
     class Disciplines_List
     {
         OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=DESKTOP-PHP72G2;Initial Catalog=BD_project;Integrated Security=SSPI");
+        private static UndDisciplines_List IndD = new UndDisciplines_List();
         public int CurriculumID { get; set; }
+        public int SchedID { get; set; }
 
         public void AddDiscipline(int dis)
         {
@@ -14,6 +16,13 @@ namespace Scheldule
             OleDbCommand command = new OleDbCommand(AddDir, con);
             command.ExecuteScalar();
             con.Close();
+        }
+        public int GetUndDisc(string nameD)
+        {
+            IndD.CurriculumID = CurriculumID;
+            IndD.SchID = SchedID;
+            int discID = IndD.FindUndDiscip(nameD);
+            return discID;
         }
     }
 }
