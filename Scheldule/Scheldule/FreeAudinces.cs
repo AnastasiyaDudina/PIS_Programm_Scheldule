@@ -19,7 +19,7 @@ namespace Scheldule
             while (flag)
             {
                 lesson = Les[i];
-                string findAud = "select name from audience EXCEPT select aud from FreeLessons where day = '"+ lesson.Day+ "' and time = '"+ lesson.Time+ "'";
+                string findAud = "select name from audience EXCEPT select aud from BusyAudinces where day = '" + lesson.Day+ "' and time = '"+ lesson.Time+ "'";
                 OleDbCommand Aud = new OleDbCommand(findAud, con);
                 OleDbDataReader readerAud = Aud.ExecuteReader();
                 if (readerAud.HasRows) 
