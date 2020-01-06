@@ -31,45 +31,65 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.учебныйПланToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.расписаниеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.преподавательToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.нагрузкаПреподавателяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(48, 48);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.учебныйПланToolStripMenuItem,
-            this.расписаниеToolStripMenuItem});
+            this.расписаниеToolStripMenuItem,
+            this.преподавательToolStripMenuItem,
+            this.нагрузкаПреподавателяToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(828, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(19, 6, 0, 6);
+            this.menuStrip1.Size = new System.Drawing.Size(2559, 64);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // учебныйПланToolStripMenuItem
             // 
             this.учебныйПланToolStripMenuItem.Name = "учебныйПланToolStripMenuItem";
-            this.учебныйПланToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
+            this.учебныйПланToolStripMenuItem.Size = new System.Drawing.Size(285, 52);
             this.учебныйПланToolStripMenuItem.Text = "Учебный план";
             this.учебныйПланToolStripMenuItem.Click += new System.EventHandler(this.учебныйПланToolStripMenuItem_Click);
             // 
             // расписаниеToolStripMenuItem
             // 
             this.расписаниеToolStripMenuItem.Name = "расписаниеToolStripMenuItem";
-            this.расписаниеToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.расписаниеToolStripMenuItem.Size = new System.Drawing.Size(241, 52);
             this.расписаниеToolStripMenuItem.Text = "Расписание";
             this.расписаниеToolStripMenuItem.Click += new System.EventHandler(this.расписаниеToolStripMenuItem_Click);
             // 
+            // преподавательToolStripMenuItem
+            // 
+            this.преподавательToolStripMenuItem.Name = "преподавательToolStripMenuItem";
+            this.преподавательToolStripMenuItem.Size = new System.Drawing.Size(302, 52);
+            this.преподавательToolStripMenuItem.Text = "Преподаватель";
+            // 
+            // нагрузкаПреподавателяToolStripMenuItem
+            // 
+            this.нагрузкаПреподавателяToolStripMenuItem.Name = "нагрузкаПреподавателяToolStripMenuItem";
+            this.нагрузкаПреподавателяToolStripMenuItem.Size = new System.Drawing.Size(455, 52);
+            this.нагрузкаПреподавателяToolStripMenuItem.Text = "Нагрузка преподавателя";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(828, 381);
+            this.ClientSize = new System.Drawing.Size(2559, 902);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MaximumSize = new System.Drawing.Size(844, 420);
+            this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.MaximumSize = new System.Drawing.Size(2595, 1005);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(844, 420);
+            this.MinimumSize = new System.Drawing.Size(2595, 1005);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Информационная система составления расписания на один семестр";
@@ -85,6 +105,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem учебныйПланToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem расписаниеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem преподавательToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem нагрузкаПреподавателяToolStripMenuItem;
     }
 }
 

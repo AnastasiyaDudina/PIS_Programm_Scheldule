@@ -5,7 +5,7 @@ namespace Scheldule
 {
     class Curriculum
     {
-        OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=DESKTOP-PHP72G2;Initial Catalog=BD_project;Integrated Security=SSPI");
+        OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=LAPTOP-JA1SSE7M;Initial Catalog=BD_project;Integrated Security=SSPI");
 
         private static University Univer = new University();
         private static Discipline Discipl = new Discipline();

@@ -42,7 +42,7 @@ namespace Scheldule
         {
             comboBox2.Items.Clear();
             comboBox2.Text = "";
-            OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=DESKTOP-PHP72G2;Initial Catalog=BD_project;Integrated Security=SSPI");
+            OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=LAPTOP-JA1SSE7M;Initial Catalog=BD_project;Integrated Security=SSPI");
              con.Open();
              string gr = "select name from[group] where id_direction = '" + comboBox1.SelectedValue + "'";
              OleDbCommand command = new OleDbCommand(gr, con);
@@ -84,7 +84,7 @@ namespace Scheldule
         {
             comboBox3.Items.Clear();
             comboBox3.Text = "";
-            OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=DESKTOP-PHP72G2;Initial Catalog=BD_project;Integrated Security=SSPI");
+            OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=LAPTOP-JA1SSE7M;Initial Catalog=BD_project;Integrated Security=SSPI");
             con.Open();
             string UndD = "select dd.discipline from discipline as dd Inner JOIN (select l.DisciplineID from ListDisciplines as l INNER JOIN discipline as d on l.DisciplineID = d.id where l.CurriculumID = '"+CurID+ "' EXCEPT( select disciplineName from BusyLessons where id_schedule = '" + SchID+"')) as ll on ll.DisciplineID = dd.id";
             OleDbCommand command = new OleDbCommand(UndD, con);
@@ -101,7 +101,7 @@ namespace Scheldule
         }
         private void UpdateSch()
         {
-            OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=DESKTOP-PHP72G2;Initial Catalog=BD_project;Integrated Security=SSPI");
+            OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=LAPTOP-JA1SSE7M;Initial Catalog=BD_project;Integrated Security=SSPI");
             con.Open();
             string lesson = "select b.day, b.time,b.aud, d.discipline from BusyLessons as b INNER JOIN discipline as d on d.id = b.disciplineName where id_schedule = '"+ SchID + "'";
             OleDbCommand command = new OleDbCommand(lesson, con);
@@ -184,6 +184,11 @@ namespace Scheldule
             d[0, 0].Value = "8:00-10:00";
             d[0, 1].Value = "11:00-13:00";
             d[0, 2].Value = "14:00-16:00";
+        }
+
+        private void directionBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

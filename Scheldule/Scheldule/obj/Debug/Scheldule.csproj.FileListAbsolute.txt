@@ -21,3 +21,13 @@ C:\Users\Aleksey\Desktop\GitSch\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\D
 C:\Users\Aleksey\Desktop\GitSch\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.exe
 C:\Users\Aleksey\Desktop\GitSch\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.pdb
 C:\Users\Aleksey\Desktop\GitSch\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.SchedForm.resources
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\bin\Debug\Scheldule.exe.config
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\bin\Debug\Scheldule.exe
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\bin\Debug\Scheldule.pdb
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.CurriculumForm.resources
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.Form1.resources
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.Properties.Resources.resources
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.SchedForm.resources
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.csproj.GenerateResource.cache
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.exe
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.pdb

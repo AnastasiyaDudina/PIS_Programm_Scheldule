@@ -7,7 +7,7 @@ namespace Scheldule
     {
         public int Id_discipline { get; set; }
 
-        OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=DESKTOP-PHP72G2;Initial Catalog=BD_project;Integrated Security=SSPI");
+        OleDbConnection con = new OleDbConnection("Provider=SQLOLEDB;Data Source=LAPTOP-JA1SSE7M;Initial Catalog=BD_project;Integrated Security=SSPI");
 
         public int CreateDis(string name, int hour, int dep)
         {

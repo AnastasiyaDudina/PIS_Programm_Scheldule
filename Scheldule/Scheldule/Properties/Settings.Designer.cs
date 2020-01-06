@@ -26,7 +26,7 @@ namespace Scheldule.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-PHP72G2;Initial Catalog=BD_project;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-JA1SSE7M;Initial Catalog=BD_project;Integrated Security=True")]
         public string BD_projectConnectionString {
             get {
                 return ((string)(this["BD_projectConnectionString"]));
