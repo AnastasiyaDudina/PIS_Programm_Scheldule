@@ -57,8 +57,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD_projectDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BD_projectDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_projectDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_projectDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_projectDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_projectDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_projectDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_projectDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_projectDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BusyAudinces.cs" />
     <Compile Include="BusyLessons.cs" />
+    <Compile Include="LecturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecturerForm.Designer.cs">
+      <DependentUpon>LecturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer.cs" />
     <Compile Include="Curriculum.cs" />
     <Compile Include="CurriculumForm.cs">
       <SubType>Form</SubType>
@@ -103,6 +130,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LecturerForm.resx">
+      <DependentUpon>LecturerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -136,6 +166,50 @@
     </None>
     <None Include="BD_projectDataSet1.xss">
       <DependentUpon>BD_projectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet2.xsc">
+      <DependentUpon>BD_projectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_projectDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_projectDataSet2.xss">
+      <DependentUpon>BD_projectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet3.xsc">
+      <DependentUpon>BD_projectDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_projectDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_projectDataSet3.xss">
+      <DependentUpon>BD_projectDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet4.xsc">
+      <DependentUpon>BD_projectDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_projectDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_projectDataSet4.xss">
+      <DependentUpon>BD_projectDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet5.xsc">
+      <DependentUpon>BD_projectDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_projectDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_projectDataSet5.xss">
+      <DependentUpon>BD_projectDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

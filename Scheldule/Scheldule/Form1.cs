@@ -32,5 +32,13 @@ namespace Scheldule
             sf.ShowDialog();
             this.Close();
         }
+
+        private void преподавательToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LecturerForm sf = new LecturerForm();
+            this.Hide();
+            sf.ShowDialog();
+            this.Close();
+        }
     }
 }

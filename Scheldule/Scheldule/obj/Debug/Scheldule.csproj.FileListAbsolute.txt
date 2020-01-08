@@ -31,3 +31,5 @@ C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.SchedFor
 C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.csproj.GenerateResource.cache
 C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.exe
 C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.pdb
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.csprojAssemblyReference.cache
+C:\p\PIS\PIS_Programm_Scheldule\Scheldule\Scheldule\obj\Debug\Scheldule.LecturerForm.resources

@@ -73,5 +73,10 @@ namespace Scheldule
             Form1 fr = new Form1();
             fr.ShowDialog();
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
