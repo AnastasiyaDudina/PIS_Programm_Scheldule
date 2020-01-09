@@ -40,5 +40,13 @@ namespace Scheldule
             sf.ShowDialog();
             this.Close();
         }
+
+        private void нагрузкаПреподавателяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WorkloadForm sf = new WorkloadForm();
+            this.Hide();
+            sf.ShowDialog();
+            this.Close();
+        }
     }
 }

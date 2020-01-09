@@ -36,7 +36,7 @@ namespace Scheldule
             {
                 MessageBox.Show("Преподаватель НЕ добавлен!");
             }
-            LecturerForm sf = new LecturerForm();
+            Form1 sf = new Form1();
             this.Hide();
             sf.ShowDialog();
             this.Close();

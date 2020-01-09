@@ -37,9 +37,46 @@ namespace Scheldule
         }
 
 
+        public int NewHourNum(int hour, int disciplineHour)
+        {
+            if (hour - disciplineHour >= 0)
+            {
+                hour -= disciplineHour; 
+            }
+            else
+            {
+                MessageBox.Show("Невозможно добавить дисциплину!");
+            }
+            Hour = hour;
+            return hour;
+        }
 
-
-
+        public bool FindLecturerHours(string lec, int disciplineHour)
+        {
+            con.Open();
+            OleDbCommand da = new OleDbCommand("select Hour from Lecturer where NameLecturer = '" + lec + "' ", con);
+            int result = Convert.ToInt32(da.ExecuteScalar());
+            if (disciplineHour <= result)
+            {
+                result -= disciplineHour;
+            }
+            else
+            {
+                MessageBox.Show("Невозможно добавить дисциплину!");
+                return false;
+            }
+            con.Close();
+            UpdateLecturer(lec, result);
+            return true;
+        }
+        public void UpdateLecturer(string lec, int result)
+        {
+            con.Open();
+            string Lessons = "Update Lecturer SET Hour = '" + result + "' WHERE NameLecturer = '" + lec + "'";
+            OleDbCommand command = new OleDbCommand(Lessons, con);
+            command.ExecuteReader();
+            con.Close();
+        }
 
         public bool NewName(string Name)
         {

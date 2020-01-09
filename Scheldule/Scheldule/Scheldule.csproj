@@ -77,6 +77,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD_projectDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BD_projectDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_projectDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_projectDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_projectDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_projectDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_projectDataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BusyAudinces.cs" />
     <Compile Include="BusyLessons.cs" />
     <Compile Include="LecturerForm.cs">
@@ -124,6 +139,13 @@
     <Compile Include="Schedules_List.cs" />
     <Compile Include="UndDisciplines_List.cs" />
     <Compile Include="University.cs" />
+    <Compile Include="WorkLoad.cs" />
+    <Compile Include="WorkloadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkloadForm.Designer.cs">
+      <DependentUpon>WorkloadForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CurriculumForm.resx">
       <DependentUpon>CurriculumForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +166,9 @@
     </Compile>
     <EmbeddedResource Include="SchedForm.resx">
       <DependentUpon>SchedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkloadForm.resx">
+      <DependentUpon>WorkloadForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="BD_projectDataSet.xsc">
       <DependentUpon>BD_projectDataSet.xsd</DependentUpon>
@@ -210,6 +235,39 @@
     </None>
     <None Include="BD_projectDataSet5.xss">
       <DependentUpon>BD_projectDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet6.xsc">
+      <DependentUpon>BD_projectDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_projectDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_projectDataSet6.xss">
+      <DependentUpon>BD_projectDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet7.xsc">
+      <DependentUpon>BD_projectDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_projectDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_projectDataSet7.xss">
+      <DependentUpon>BD_projectDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet8.xsc">
+      <DependentUpon>BD_projectDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="BD_projectDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_projectDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_projectDataSet8.xss">
+      <DependentUpon>BD_projectDataSet8.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

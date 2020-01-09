@@ -33,6 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.listDepartmentsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bD_projectDataSet4 = new Scheldule.BD_projectDataSet4();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -44,55 +46,56 @@
             this.hourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmenIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecturerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bD_projectDataSet5 = new Scheldule.BD_projectDataSet5();
             this.lecturerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bD_projectDataSet2 = new Scheldule.BD_projectDataSet2();
             this.lecturerTableAdapter = new Scheldule.BD_projectDataSet2TableAdapters.LecturerTableAdapter();
             this.bD_projectDataSet3 = new Scheldule.BD_projectDataSet3();
             this.listDepartmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listDepartmentsTableAdapter = new Scheldule.BD_projectDataSet3TableAdapters.ListDepartmentsTableAdapter();
-            this.bD_projectDataSet4 = new Scheldule.BD_projectDataSet4();
-            this.listDepartmentsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.listDepartmentsTableAdapter1 = new Scheldule.BD_projectDataSet4TableAdapters.ListDepartmentsTableAdapter();
-            this.bD_projectDataSet5 = new Scheldule.BD_projectDataSet5();
-            this.lecturerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lecturerTableAdapter1 = new Scheldule.BD_projectDataSet5TableAdapters.LecturerTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.listDepartmentsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet4)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecturerBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecturerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listDepartmentsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listDepartmentsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lecturerBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 208);
+            this.label1.Location = new System.Drawing.Point(10, 73);
+            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 46);
+            this.label1.Size = new System.Drawing.Size(42, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "ФИО";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 285);
+            this.label2.Location = new System.Drawing.Point(9, 100);
+            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(268, 46);
+            this.label2.Size = new System.Drawing.Size(95, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Кол-во часов";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 361);
+            this.label3.Location = new System.Drawing.Point(9, 127);
+            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 46);
+            this.label3.Size = new System.Drawing.Size(81, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Должность";
             // 
@@ -101,27 +104,38 @@
             this.comboBox1.DataSource = this.listDepartmentsBindingSource1;
             this.comboBox1.DisplayMember = "name";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(35, 125);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.comboBox1.Location = new System.Drawing.Point(11, 44);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(685, 54);
+            this.comboBox1.Size = new System.Drawing.Size(219, 24);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.ValueMember = "id";
             // 
+            // listDepartmentsBindingSource1
+            // 
+            this.listDepartmentsBindingSource1.DataMember = "ListDepartments";
+            this.listDepartmentsBindingSource1.DataSource = this.bD_projectDataSet4;
+            // 
+            // bD_projectDataSet4
+            // 
+            this.bD_projectDataSet4.DataSetName = "BD_projectDataSet4";
+            this.bD_projectDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(345, 208);
+            this.textBox1.Location = new System.Drawing.Point(109, 73);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(375, 53);
+            this.textBox1.Size = new System.Drawing.Size(121, 23);
             this.textBox1.TabIndex = 4;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(345, 361);
+            this.textBox3.Location = new System.Drawing.Point(109, 127);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(371, 53);
+            this.textBox3.Size = new System.Drawing.Size(120, 23);
             this.textBox3.TabIndex = 6;
             // 
             // groupBox1
@@ -135,18 +149,21 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(13, 74);
+            this.groupBox1.Location = new System.Drawing.Point(4, 26);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(779, 561);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.groupBox1.Size = new System.Drawing.Size(246, 197);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Добавление нового преподавателя";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(35, 430);
+            this.button1.Location = new System.Drawing.Point(11, 151);
+            this.button1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(690, 97);
+            this.button1.Size = new System.Drawing.Size(218, 34);
             this.button1.TabIndex = 8;
             this.button1.Text = "Добавить!";
             this.button1.UseVisualStyleBackColor = true;
@@ -154,8 +171,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(345, 282);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.numericUpDown1.Location = new System.Drawing.Point(109, 99);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             500,
             0,
@@ -167,7 +183,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(383, 53);
+            this.numericUpDown1.Size = new System.Drawing.Size(121, 23);
             this.numericUpDown1.TabIndex = 7;
             this.numericUpDown1.Value = new decimal(new int[] {
             120,
@@ -188,12 +204,13 @@
             this.positionDataGridViewTextBoxColumn,
             this.departmenIDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.lecturerBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(798, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(252, 26);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 123;
             this.dataGridView1.RowTemplate.Height = 46;
-            this.dataGridView1.Size = new System.Drawing.Size(1637, 561);
+            this.dataGridView1.Size = new System.Drawing.Size(517, 197);
             this.dataGridView1.TabIndex = 8;
             // 
             // iDDataGridViewTextBoxColumn
@@ -236,6 +253,16 @@
             this.departmenIDDataGridViewTextBoxColumn.Name = "departmenIDDataGridViewTextBoxColumn";
             this.departmenIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // lecturerBindingSource1
+            // 
+            this.lecturerBindingSource1.DataMember = "Lecturer";
+            this.lecturerBindingSource1.DataSource = this.bD_projectDataSet5;
+            // 
+            // bD_projectDataSet5
+            // 
+            this.bD_projectDataSet5.DataSetName = "BD_projectDataSet5";
+            this.bD_projectDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // lecturerBindingSource
             // 
             this.lecturerBindingSource.DataMember = "Lecturer";
@@ -264,29 +291,9 @@
             // 
             this.listDepartmentsTableAdapter.ClearBeforeFill = true;
             // 
-            // bD_projectDataSet4
-            // 
-            this.bD_projectDataSet4.DataSetName = "BD_projectDataSet4";
-            this.bD_projectDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // listDepartmentsBindingSource1
-            // 
-            this.listDepartmentsBindingSource1.DataMember = "ListDepartments";
-            this.listDepartmentsBindingSource1.DataSource = this.bD_projectDataSet4;
-            // 
             // listDepartmentsTableAdapter1
             // 
             this.listDepartmentsTableAdapter1.ClearBeforeFill = true;
-            // 
-            // bD_projectDataSet5
-            // 
-            this.bD_projectDataSet5.DataSetName = "BD_projectDataSet5";
-            this.bD_projectDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // lecturerBindingSource1
-            // 
-            this.lecturerBindingSource1.DataMember = "Lecturer";
-            this.lecturerBindingSource1.DataSource = this.bD_projectDataSet5;
             // 
             // lecturerTableAdapter1
             // 
@@ -294,26 +301,27 @@
             // 
             // LecturerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(2467, 700);
+            this.ClientSize = new System.Drawing.Size(864, 246);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "LecturerForm";
             this.Load += new System.EventHandler(this.LecturerForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.listDepartmentsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet4)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lecturerBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lecturerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listDepartmentsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listDepartmentsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_projectDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lecturerBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
